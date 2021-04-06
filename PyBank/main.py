@@ -59,7 +59,7 @@ output_path = 'output.txt'
 with open(output_path, 'w') as file:
     file.write("Financial Analysis\n")
     file.write("------------------\n")
-    file.write(f"TotalMonths: {net_months}\n")
+    file.write(f"Total Months: {net_months}\n")
     file.write(f"Total: ${int(sum(profit))}\n")
     file.write(f"Average Change: ${round(net_profit_change/(net_months - 1),2)}\n")
     file.write(f"Greatest Increase in Profits: {months[max_increase_month]} (${round(max_increase)})\n")
